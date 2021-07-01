@@ -3,12 +3,11 @@
       Gifs App
     </h3>
     <hr class="text-white" />
-    <div class="list-group list-reset">
+    <div class="list" *ngFor="let h of historial">
       <a
         href="#"
-        class="list-group-item list-group-item-action"
       >
-        Dashboard 
+        {{ h | titlecase}}
       </a>
     </div>
 </div>
